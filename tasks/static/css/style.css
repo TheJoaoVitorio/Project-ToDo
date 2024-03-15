@@ -1,0 +1,107 @@
+.container-fluid{
+    padding:0;
+}
+
+/* Navbar */
+.navbar {
+    border-bottom: 1px solid #333;
+    margin-bottom: 20px;
+}
+.navbar-nav{
+    margin: auto;
+}
+.navbar-brand{
+    font-weight: bold;
+}
+.navbar-light .navbar-nav a.nav-link{
+    color:#333;
+    letter-spacing: 1px;
+}
+/* Fim Navbar */
+
+/* Botão de adicionar tarefa */
+.add-div{
+    background-color: #0d6efd ;
+    cursor:pointer;
+    display: inline-block;
+    color:#fff;
+    border-radius:5px;
+    margin-right: 25px;
+    padding:8px;
+}
+.fas.fa-plus{
+    color:#FFF;
+    margin-right:10px;
+    margin-left: 5px;
+}
+
+/* Fim Botão de add tarefa */
+
+
+/* Search*/
+.search-div{
+    padding:0px;
+    margin-top: 15px;
+    margin-bottom:15px;
+    display:inline-block;
+    position: relative;
+}
+.fas.fa-search{
+    position: absolute;
+    top:12px;
+    right:26px;
+}
+/* Fim Search*/
+
+
+/* Lista de Tarefas*/
+.list-div{
+    padding:0;
+}
+.task-list{
+    padding-left: 0;
+}
+.task-item{
+    list-style: none;
+    font-size: 20px;
+    height: 50px;
+    padding-top:10px;
+    border-bottom:1px dashed #ccc;
+}
+.fas.fa-trash, .fas.fa-edit{
+    cursor: pointer;
+    margin: 5px;
+    font-size:20px;
+    float:right;
+}
+.fas.fa-trash{
+    color:#dc3545;
+}
+.fas.fa-edit{
+    color:#198754;
+}
+/* Fim Lista de Tarefas*/
+
+
+/* Footer */
+footer{
+    background: #333;
+    height: 200px;
+    border-top: 2px solid #202020;
+}
+footer > div{
+    display: flex;
+    justify-content: center;
+    text-align:center;
+    gap:12px;
+
+    top:50%;
+    position: relative;
+}
+footer p,a{
+    color: #f5f5f5;
+}
+footer a:hover{
+    color: #787878;
+}
+/* Fim Footer */
