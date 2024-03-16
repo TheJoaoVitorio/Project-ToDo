@@ -98,10 +98,7 @@ footer > div{
     top:50%;
     position: relative;
 }
-footer p,a{
+footer{
     color: #f5f5f5;
-}
-footer a:hover{
-    color: #787878;
 }
 /* Fim Footer */

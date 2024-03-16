@@ -4,8 +4,9 @@ from . import views
 urlpatterns = [
     #nome de url / função de views
     path('hello/',views.HelloWorld),
+    path('seunome/<str:name>',views.SeuNome,name='seu-nome'),
 
     #caminho , view , name.
     path('',views.taskList,name='task-list'),
-    path('seunome/<str:name>',views.SeuNome,name='seu-nome'),
+    path('task/<int:id>',views.taskView,name='task-view'),
 ]
