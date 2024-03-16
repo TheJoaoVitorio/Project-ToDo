@@ -10,5 +10,6 @@ def SeuNome(request,name):
     return render(request,'tasks/seunome.html',{'name':name})
 
 
+# Views do ToDo
 def taskList(request):
     return render (request,'tasks/list.html')
