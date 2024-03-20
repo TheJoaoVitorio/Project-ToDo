@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}Lista de Tarefas{% endblock %}
+
+{% block content %}
+<div class="offset-1 col-10 list-div">
+    <h1>Adicione sua Nova tarefa</h1>
+    <form method="POST">
+        <!-- Sempre que for criar um formulario , deve-se usar o csrf_token -->
+        {% csrf_token %}
+        {{form.as_p}}
+        <input class="btn btn-success" type="submit" value="Criar Tarefa">
+    </form>
+</div>
+{% endblock %}

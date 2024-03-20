@@ -6,9 +6,11 @@
 .navbar {
     border-bottom: 1px solid #333;
     margin-bottom: 20px;
+    padding:10px;
 }
 .navbar-nav{
     margin: auto;
+    padding:10px;
 }
 .navbar-brand{
     font-weight: bold;
@@ -33,6 +35,9 @@
     color:#FFF;
     margin-right:10px;
     margin-left: 5px;
+}
+#add-link{
+    text-decoration: none;
 }
 
 /* Fim Botão de add tarefa */
