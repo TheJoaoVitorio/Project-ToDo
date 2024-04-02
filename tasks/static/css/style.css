@@ -116,3 +116,19 @@ ul.messages li{
     list-style: none;
 }
 /* Fim Message*/
+
+
+/* Paginacao*/
+.pagination{
+    margin-bottom:20px;
+}
+.step-links{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+.step-links .current-page{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+/**/
