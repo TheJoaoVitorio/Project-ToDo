@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+<!-- {% load crispy_forms_tags %} -->
 
 {% block title %}Adicione a sua nova tarefa{% endblock %}
 
@@ -9,6 +10,7 @@
         <!-- Sempre que for criar um formulario , deve-se usar o csrf_token -->
         {% csrf_token %}
         {{form.as_p}}
+       
         <input class="btn btn-success" type="submit" value="Criar Tarefa">
     </form>
 </div>

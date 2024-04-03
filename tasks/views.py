@@ -16,12 +16,19 @@ def SeuNome(request,name):
 
 # Views do ToDo
 def taskList(request):
-    tasks_list = Task.objects.all().order_by('-created_at')
-    paginator = Paginator(tasks_list, 3)
-    page = request.GET.get('page')
+                              #name-do-input
+    search =  request.GET.get('search') 
 
-    tasks = paginator.get_page(page)
-    return render (request,'tasks/list.html',{'tasks':tasks})
+    if search:
+        tasks = Task.objects.filter(title__icontains=search)
+        return render (request,'tasks/list.html',{'tasks':tasks})
+    else:
+        tasks_list = Task.objects.all().order_by('-created_at')
+        paginator = Paginator(tasks_list, 3)
+        page = request.GET.get('page')
+
+        tasks = paginator.get_page(page)
+        return render (request,'tasks/list.html',{'tasks':tasks})
 
 def taskView(request,id):
                             #model , id
@@ -65,3 +72,4 @@ def deleteTask(request,id):
     messages.info(request,'Tarefa Deletada com Sucesso!')
 
     return redirect ('/')
+

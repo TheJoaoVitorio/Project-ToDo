@@ -55,6 +55,7 @@
     position: absolute;
     top:12px;
     right:26px;
+    cursor:pointer;
 }
 /* Fim Search*/
 
@@ -126,6 +127,19 @@ ul.messages li{
     position: relative;
     margin-left: auto;
     margin-right: auto;
+}
+.step-links .return a{
+    text-decoration: none;
+    border:2px solid #202020;
+    color: #202020;
+    padding:5px;
+    border-radius:5px;
+}
+.step-links .return a:hover{
+    background: #202020;
+    border-radius: 5px;
+    padding:5px;
+    color:white;
 }
 .step-links .current-page{
     margin-left: 5px;
